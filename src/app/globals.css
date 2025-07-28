@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  /* --font-gothic: 'Gothic A1', sans-serif; */
+}
+
+body {
+  font-family: var(--font-roboto);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@keyframes rise-fade {
+  0% {
+    opacity: 0.3;
+    transform: translateY(40px) scale(1);
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateY(-10px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px) scale(1.2);
+  }
+}
+.animate-rise-fade {
+  animation: rise-fade 2.5s infinite;
+}
