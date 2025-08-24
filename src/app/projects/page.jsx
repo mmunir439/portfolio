@@ -39,7 +39,7 @@ const projects = [
       "A simple and intuitive todo application for managing tasks, built with Next.js and MongoDB.",
     image: "/assets/todoapp.avif",
     tags: ["Next.js", "MongoDB", "Tailwind CSS"],
-    href: "https://github.com/mmunir439/todoapp_frontend",
+    href: "https://todoapp-frontend-beryl.vercel.app/",
   },
   {
     title: "Criminal Record app",
