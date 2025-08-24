@@ -231,11 +231,11 @@ export default function AboutMe() {
         <div className="mt-10">
           <div className="bg-gradient-to-r from-green-700 to-green-900 rounded-2xl p-8 shadow-lg text-white relative overflow-hidden">
             <div className="flex items-center mb-3 text-xl font-semibold">
-              <span className="mr-2">🕌</span>
+              <span className="mr-2">🧱</span>
               Currently Working On
             </div>
             <p className="mb-4">
-              Building <span className="font-bold">AlKalam</span>, an Islamic online learning platform where users can register and join live or recorded classes on Quran, Hadith, and Islamic studies. The platform features secure registration, class scheduling, and interactive sessions, all designed for a global audience seeking authentic Islamic education.
+              Building <span className="font-bold">eBricks</span>, an e-commerce platform where users can order bricks online. The platform features secure registration, order tracking, and a seamless user experience, designed to modernize the construction industry.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">ReactJS</span>
@@ -246,6 +246,38 @@ export default function AboutMe() {
             </div>
             {/* Decorative circle */}
             <span className="absolute right-8 bottom-0 w-40 h-40 rounded-full bg-green-900 opacity-20"></span>
+          </div>
+        </div>
+        {/* Other Projects Row */}
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Criminal Record App */}
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col">
+            <div className="flex items-center mb-2 text-green-700 text-2xl">
+              <FaDatabase className="mr-2" />
+              <span className="text-lg font-bold text-[#1a2e1a]">Criminal Record App</span>
+            </div>
+            <p className="text-[#2C662C] mb-2">
+              A secure application to find criminal records based on CNIC. Features user authentication and a robust backend for data management.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-auto">
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">ReactJS</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Node.js</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">MongoDB</span>
+            </div>
+          </div>
+          {/* Todo App */}
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col">
+            <div className="flex items-center mb-2 text-green-700 text-2xl">
+              <FaBook className="mr-2" />
+              <span className="text-lg font-bold text-[#1a2e1a]">Todo App</span>
+            </div>
+            <p className="text-[#2C662C] mb-2">
+              A simple and efficient task management app to organize daily activities. Built with a focus on user-friendly design and functionality.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-auto">
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">ReactJS</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+            </div>
           </div>
         </div>
         {/* Certifications Section */}
