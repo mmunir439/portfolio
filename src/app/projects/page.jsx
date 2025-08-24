@@ -21,7 +21,7 @@ const projects = [
       "Online Booking Store where people can come and book their favorite shoes. Built with React and Tailwind CSS.",
     image: "/assets/books.jpg",
     tags: ["React", "Tailwind CSS"],
-    href: "https://github.com/mmunir439/munirbooksstore.git",
+    href: "https://munirbookstore.example.com/", // Updated href
   },
   {
     title: "BlOGSAPP",
@@ -31,6 +31,33 @@ const projects = [
     image: "/assets/blogsapp.avif",
     tags: ["Next.js", "MongoDB", "Tailwind CSS"],
     href: "https://blogs-app-sigma-five.vercel.app/",
+  },
+  {
+    title: "Todoapp",
+    subtitle: "Todo Application",
+    description:
+      "A simple and intuitive todo application for managing tasks, built with Next.js and MongoDB.",
+    image: "/assets/todoapp.avif",
+    tags: ["Next.js", "MongoDB", "Tailwind CSS"],
+    href: "https://github.com/mmunir439/todoapp_frontend",
+  },
+  {
+    title: "Criminal Record app",
+    subtitle: "Criminal Record Application",
+    description:
+      "A simple and intuitive application for managing criminal records, built with Next.js and MongoDB.",
+    image: "/assets/criminal.avif",
+    tags: ["Next.js", "MongoDB", "Tailwind CSS"],
+    href: "https://crime-checker-ai-2025-frontend-zeta.vercel.app/",
+  },
+  {
+    title: "EBricks",
+    subtitle: "E-Commerce Platform",
+    description:
+      "A modern e-commerce platform for buying and selling products, with features like user authentication, product reviews, and a shopping cart. Built with Next.js and MongoDB.",
+    image: "/assets/bricks.avif",
+    tags: ["Next.js", "MongoDB", "Tailwind CSS"],
+    href: "https://github.com/mmunir439/Ebricks.git",
   },
   // Add more projects as needed
 ];
