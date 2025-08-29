@@ -57,7 +57,7 @@ const projects = [
       "A modern e-commerce platform for buying and selling products, with features like user authentication, product reviews, and a shopping cart. Built with Next.js and MongoDB.",
     image: "/assets/bricks.avif",
     tags: ["Next.js", "MongoDB", "Tailwind CSS"],
-    href: "https://github.com/mmunir439/Ebricks.git",
+    href: "https://ebricks-pied.vercel.app/",
   },
   // Add more projects as needed
 ];
