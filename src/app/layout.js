@@ -21,6 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable}`}>
+      <head>
+        <title>My Portfolio</title>
+         <link rel="icon" type="image/x-icon" href="/electronics.png" />
+      </head>
       <body>
         {children}
       </body>

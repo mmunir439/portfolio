@@ -59,6 +59,15 @@ const projects = [
     tags: ["Next.js", "MongoDB", "Tailwind CSS"],
     href: "https://ebricks-pied.vercel.app/",
   },
+  {
+    title: "Eelectronics",
+    subtitle: "E-Commerce Platform",
+    description:
+      "A modern e-commerce platform for electronics products. Where user can buy online electronics products.",
+    image: "/electronics.png",
+    tags: ["Next.js", "MongoDB", "Tailwind CSS", "postman", "firebase", "shadcnui"],
+    href: "https://ebricks-pied.vercel.app/",
+  },
   // Add more projects as needed
 ];
 
@@ -69,50 +78,49 @@ export default function Projects() {
     <div className="min-h-screen bg-[#f7faf7] py-10 px-2 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#1a2e1a] mb-8 text-center">My Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, idx) => (
             <Link
               href={project.href}
               key={idx}
               target="_blank"
-              className="bg-white rounded-2xl shadow hover:shadow-lg transition group flex flex-col"
+              className="bg-white rounded-2xl shadow hover:shadow-lg transition group flex flex-col overflow-hidden"
             >
               {/* Image with overlay and text */}
               <div className="relative rounded-xl overflow-hidden h-56 mb-4">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-<div className="absolute inset-0 bg-orange-900/60 flex flex-col items-center justify-center">
-  <h2 className="text-3xl font-extrabold text-white tracking-wide">{project.title}</h2>
-  <span className="text-lg text-white font-medium mt-1">{project.subtitle}</span>
-</div>
+                <div className="absolute inset-0 bg-orange-900/60 flex flex-col items-center justify-center">
+                  <h2 className="text-3xl font-extrabold text-white tracking-wide text-center px-2">
+                    {project.title}
+                  </h2>
+                  <span className="text-lg text-white font-medium mt-1 text-center px-2">
+                    {project.subtitle}
+                  </span>
+                </div>
               </div>
               {/* Project Title and Description */}
-              <div className="flex items-center justify-between mb-1 px-2">
-                <h3 className="font-bold text-lg text-[#1a2e1a]">
+              <div className="flex flex-col justify-between flex-1 px-4 pb-4">
+                <h3 className="font-bold text-lg text-[#1a2e1a] mb-2">
                   {project.title} | {project.subtitle}
                 </h3>
-                <span className="text-green-700">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-              </div>
-              <p className="text-[#2C662C] text-sm mb-3 px-2">
-                {project.description}
-              </p>
-              {/* Tech tags */}
-              <div className="flex gap-2 px-2 pb-3">
-                {project.tags.map((tag, i) => (
-                  <span
-                    key={i}
-                    className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                <p className="text-[#2C662C] text-sm mb-3">
+                  {project.description}
+                </p>
+                {/* Tech tags */}
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}
