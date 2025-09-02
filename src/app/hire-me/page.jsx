@@ -134,51 +134,51 @@ export default function Hireme() {
           </div>
           {/* FAQ Section */}
           <div className="mt-12">
-  <h2 className="font-roboto text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
-      <h3 className="font-bold mb-2">How do we start working together?</h3>
-      <p>After you contact me, we'll schedule a consultation call to discuss your scope, timeline, and cost.</p>
-    </div>
-    <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
-      <h3 className="font-bold mb-2">What's your typical turnaround time?</h3>
-      <p>It depends on project complexity. Small websites may take 2-3 weeks, while complex applications can take 1-3 months. I'll provide a detailed timeline in my proposal.</p>
-    </div>
-    <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
-      <h3 className="font-bold mb-2">Do you provide ongoing support?</h3>
-      <p>Yes! I offer maintenance packages to keep your site secure, up-to-date, and running smoothly. We can discuss these options once your project is nearing completion.</p>
-    </div>
-    <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
-      <h3 className="font-bold mb-2">What payment methods do you accept?</h3>
-      <p>I accept bank transfers, PayPal, and major credit cards. For projects, I typically require a 50% deposit upfront, with the remainder due upon completion.</p>
-    </div>
-  </div>
-</div>
-{/* here is end of FAQ Section */}
-<div className="mt-12"> 
-  <div className="relative bg-gradient-to-r from-green-700 to-green-600 rounded-3xl p-8 md:p-10 text-white shadow-lg overflow-hidden">
-    <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to get started?</h2>
-    <p className="mb-2 text-white/90">
-      Whether you need my individual expertise or the power of our full team, let's create something amazing together.
-    </p>
-    <p className="mb-6 text-white/90">
-      Reach out directly at <span className="font-semibold">munir.webdev@gmail.com</span>.
-    </p>
-<button
-  type="button"
-  className="inline-flex items-center bg-white text-green-700 font-semibold px-6 py-3 rounded-xl shadow hover:bg-green-50 transition mb-2"
->
-  Email Me Directly
-  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-  </svg>
-</button>
-    {/* Decorative circles */}
-    <span className="absolute left-24 top-8 w-10 h-10 rounded-full bg-green-300 opacity-20"></span>
-    <span className="absolute right-8 top-4 w-8 h-8 rounded-full bg-green-300 opacity-20"></span>
-    <span className="absolute right-0 bottom-0 w-48 h-48 rounded-full bg-green-300 opacity-10"></span>
-  </div>
-</div>
+            <h2 className="font-roboto text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
+                <h3 className="font-bold mb-2">How do we start working together?</h3>
+                <p>After you contact me, we'll schedule a consultation call to discuss your scope, timeline, and cost.</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
+                <h3 className="font-bold mb-2">What's your typical turnaround time?</h3>
+                <p>It depends on project complexity. Small websites may take 2-3 weeks, while complex applications can take 1-3 months. I'll provide a detailed timeline in my proposal.</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
+                <h3 className="font-bold mb-2">Do you provide ongoing support?</h3>
+                <p>Yes! I offer maintenance packages to keep your site secure, up-to-date, and running smoothly. We can discuss these options once your project is nearing completion.</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow p-6 flex flex-col h-full">
+                <h3 className="font-bold mb-2">What payment methods do you accept?</h3>
+                <p>I accept bank transfers, Stripe, and major credit cards. For projects, I typically require a 50% deposit upfront, with the remainder due upon completion.</p>
+              </div>
+            </div>
+          </div>
+          {/* here is end of FAQ Section */}
+          <div className="mt-12">
+            <div className="relative bg-gradient-to-r from-green-700 to-green-600 rounded-3xl p-8 md:p-10 text-white shadow-lg overflow-hidden">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to get started?</h2>
+              <p className="mb-2 text-white/90">
+                Whether you need my individual expertise or the power of our full team, let's create something amazing together.
+              </p>
+              <p className="mb-6 text-white/90">
+                Reach out directly at <span className="font-semibold">munir.webdev@gmail.com or +923195803212</span>
+              </p>
+              <a
+                href="mailto:munir.webdev@gmail.com"
+                className="inline-flex items-center bg-white text-green-700 font-semibold px-6 py-3 rounded-xl shadow hover:bg-green-50 transition mb-2"
+              >
+                Email Me Directly
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              {/* Decorative circles */}
+              <span className="absolute left-24 top-8 w-10 h-10 rounded-full bg-green-300 opacity-20"></span>
+              <span className="absolute right-8 top-4 w-8 h-8 rounded-full bg-green-300 opacity-20"></span>
+              <span className="absolute right-0 bottom-0 w-48 h-48 rounded-full bg-green-300 opacity-10"></span>
+            </div>
+          </div>
         </div>
       </main>
       <Footer />

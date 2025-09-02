@@ -21,6 +21,8 @@ function SkillBar({ label, percent }) {
     </div>
   );
 }
+// function for the certificates
+
 
 // Rotating questions for Q&A card
 const questions = [
@@ -80,9 +82,6 @@ export default function AboutMe() {
                 </Link>
                 <Link href={process.env.NEXT_PUBLIC_LINKEDIN_URL} className="text-white hover:text-green-200 text-2xl" aria-label="LinkedIn">
                   <FaLinkedin />
-                </Link>
-                <Link href={process.env.NEXT_PUBLIC_EMAIL_URL} className="text-white hover:text-green-200 text-2xl" aria-label="Email">
-                  <FaEnvelope />
                 </Link>
               </div>
             </div>
@@ -265,6 +264,8 @@ export default function AboutMe() {
               <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">ReactJS</span>
               <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Node.js</span>
               <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">MongoDB</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Tailwind Css & Shadcn</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">API Testing using Postman</span>
             </div>
           </div>
           {/* Todo App */}
@@ -277,8 +278,10 @@ export default function AboutMe() {
               A simple and efficient task management app to organize daily activities. Built with a focus on user-friendly design and functionality.
             </p>
             <div className="flex flex-wrap gap-2 mt-auto">
-              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">ReactJS</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">ReactJS & Nextjs</span>
               <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Node & Expressjs</span>
+              <span className="bg-gray-100 text-green-700 px-3 py-1 rounded-full text-xs">Mongodb & Mongoose</span>
             </div>
           </div>
         </div>
@@ -322,9 +325,10 @@ export default function AboutMe() {
                     <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
                     <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
                   </svg>
-                  <span className="font-semibold">UI/UX Design Fundamentals</span>
+                  <span className="font-semibold">Complete Intro to web dev v3</span>
                 </div>
-                <div className="text-green-900 text-sm">freeCodeCamp, 2023</div>
+                <div className="text-green-900 text-sm">frontend Master, 2025</div>
+                 <Link href={"/certificates/completewebdev"}>View Certificate</Link>
               </div>
               {/* Certification 4 */}
               <div>
@@ -333,9 +337,10 @@ export default function AboutMe() {
                     <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
                     <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
                   </svg>
-                  <span className="font-semibold">Responsive Web Design</span>
+                  <span className="font-semibold">CSS,Responsive Web design</span>
                 </div>
-                <div className="text-green-900 text-sm">freeCodeCamp, 2024</div>
+                <div className="text-green-900 text-sm">frontend Master, 2025</div>
+                 <Link href={"/certificates/responsive"}>View Certificate</Link>
               </div>
             </div>
           </div>
