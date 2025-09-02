@@ -25,6 +25,14 @@ export default function Footer() {
           >
             LinkedIn
           </Link>
+          <Link
+            href="/certificates/resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-400 transition"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </footer>
