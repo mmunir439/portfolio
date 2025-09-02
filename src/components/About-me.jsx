@@ -24,12 +24,12 @@ function SkillBar({ label, percent }) {
 
 // Rotating questions for Q&A card
 const questions = [
-  "What is the difference between SQL and NoSQL databases?",
-  "How does REST API differ from GraphQL?",
-  "What is the purpose of JWT in authentication?",
-  "How do you optimize React app performance?",
-  "What is server-side rendering in Next.js?",
-  "How does cloud storage like Cloudinary work?",
+  "When building a MERN stack project, how do MongoDB, Express.js, React, and Node.js communicate with each other, and why is this combination widely used for full-stack development?",
+  "In a MERN application, how should we structure the backend APIs in Express.js and connect them with the frontend React components to ensure smooth communication and scalability?",
+  "What are some best practices for securing a MERN project, especially when using JWT for authentication and handling sensitive user data across frontend and backend?",
+  "How can we optimize React performance in a MERN app by using techniques such as code-splitting, lazy loading, memoization, and state management with Redux or Context API?",
+  "When deploying a MERN project, how do we handle server-side rendering with Next.js or React frameworks to improve SEO, performance, and user experience?",
+  "In a real-world MERN stack project, how can developers collaborate effectively using Git, GitHub, project management tools, and proper communication practices to ensure smooth teamwork?",
 ];
 
 export default function AboutMe() {
@@ -37,7 +37,7 @@ export default function AboutMe() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentQ((prev) => (prev + 1) % questions.length);
-    }, 3500);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
@@ -153,7 +153,7 @@ export default function AboutMe() {
             </div>
             <div className="mt-4">
               <Link
-                href="https://rentistaan.com"
+                href="https://rentistaan-front.vercel.app/"
                 target="_blank"
                 className="inline-flex items-center text-green-700 font-semibold hover:underline"
               >
@@ -227,27 +227,29 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-        {/* Currently Working On Section */}
-        <div className="mt-10">
-          <div className="bg-gradient-to-r from-green-700 to-green-900 rounded-2xl p-8 shadow-lg text-white relative overflow-hidden">
-            <div className="flex items-center mb-3 text-xl font-semibold">
-              <span className="mr-2">🧱</span>
-              Currently Working On
-            </div>
-            <p className="mb-4">
-              Building <span className="font-bold">eBricks</span>, an e-commerce platform where users can order bricks online. The platform features secure registration, order tracking, and a seamless user experience, designed to modernize the construction industry.
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">ReactJS</span>
-              <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
-              <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">Node.js</span>
-              <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">MongoDB</span>
-              <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">JWT Auth</span>
-            </div>
-            {/* Decorative circle */}
-            <span className="absolute right-8 bottom-0 w-40 h-40 rounded-full bg-green-900 opacity-20"></span>
-          </div>
-        </div>
+       {/* Currently Working On Section */}
+<div className="mt-10">
+  <div className="bg-gradient-to-r from-green-700 to-green-900 rounded-2xl p-8 shadow-lg text-white relative overflow-hidden">
+    <div className="flex items-center mb-3 text-xl font-semibold">
+      <span className="mr-2">🛒</span>
+      Currently Working On
+    </div>
+    <p className="mb-4">
+      Building <span className="font-bold">eGrocery</span>, an innovative e-commerce platform designed to simplify grocery shopping. The platform allows users to browse and order groceries online, track their orders in real-time, and enjoy a seamless shopping experience. With a focus on user convenience, secure payments, and efficient delivery, eGrocery aims to modernize the grocery industry.
+    </p>
+    <div className="flex flex-wrap gap-2">
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">ReactJS</span>
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">Node.js</span>
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">MongoDB</span>
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">JWT Auth</span>
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">APIS With Postman</span>
+      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">Stripe Payment gateway</span>
+    </div>
+    {/* Decorative circle */}
+    <span className="absolute right-8 bottom-0 w-40 h-40 rounded-full bg-green-900 opacity-20"></span>
+  </div>
+</div>
         {/* Other Projects Row */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Criminal Record App */}

@@ -60,13 +60,13 @@ const projects = [
     href: "https://ebricks-pied.vercel.app/",
   },
   {
-    title: "Eelectronics",
+    title: "Egrocery and Green the World",
     subtitle: "E-Commerce Platform",
     description:
-      "A modern e-commerce platform for electronics products. Where user can buy online electronics products.",
-    image: "/electronics.png",
-    tags: ["Next.js", "MongoDB", "Tailwind CSS", "postman", "firebase", "shadcnui"],
-    href: "https://ebricks-pied.vercel.app/",
+      "A modern e-commerce platform for grocery plants. Where user can buy online. Delivery system is also available here",
+    image: "/grocerylogo.avif",
+    tags: ["Next.js", "MongoDB", "Tailwind CSS", "postman","shadcnui"],
+    href: "https://github.com/mmunir439/eGrocery_Mern_Stack_Frontend_2025.git",
   },
   // Add more projects as needed
 ];
