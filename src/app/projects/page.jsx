@@ -66,7 +66,7 @@ const projects = [
       "A modern e-commerce platform for grocery plants. Where user can buy online. Delivery system is also available here",
     image: "/grocerylogo.avif",
     tags: ["Next.js", "MongoDB", "Tailwind CSS", "postman","shadcnui"],
-    href: "https://github.com/mmunir439/eGrocery_Mern_Stack_Frontend_2025.git",
+    href: "https://e-grocery-mern-stack-frontend-2025.vercel.app/",
   },
   // Add more projects as needed
 ];
