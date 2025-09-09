@@ -52,7 +52,7 @@ export default function AboutMe() {
           Muhammad Munir
         </h1>
         <h2 className="text-xl md:text-2xl text-[#2C662C] mb-8 font-roboto">
-          MERN Stack Developer & Nature + Cooking Enthusiast
+          Full Stack Developer & Nature + Cooking Enthusiast
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           {/* About Card */}
@@ -63,7 +63,8 @@ export default function AboutMe() {
                 <span className="text-xl font-bold text-[#1a2e1a]">About Me</span>
               </div>
               <p className="text-[#2C662C] text-base md:text-lg">
-                I'm a passionate web developer specializing in the MERN stack, crafting responsive and interactive websites. With a deep appreciation for nature and a love for cooking, I bring organic design principles and creativity to digital experiences.
+                I am a MERN stack developer with a strong focus on backend development. I specialize in creating robust APIs, implementing secure login systems with JWT, and managing databases efficiently. While I can build responsive websites using Tailwind CSS, my passion lies in solving backend challenges, optimizing performance, and ensuring seamless client-server communication. I thrive in team environments, meet deadlines, and deliver clean, maintainable code for the best user experience.
+                
               </p>
             </div>
           </div>
