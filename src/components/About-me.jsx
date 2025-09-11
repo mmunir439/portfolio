@@ -63,7 +63,7 @@ export default function AboutMe() {
                 <span className="text-xl font-bold text-[#1a2e1a]">About Me</span>
               </div>
               <p className="text-[#2C662C] text-base md:text-lg">
-                I am a MERN stack developer with a strong focus on backend development. I specialize in creating robust APIs, implementing secure login systems with JWT, and managing databases efficiently. While I can build responsive websites using Tailwind CSS, my passion lies in solving backend challenges, optimizing performance, and ensuring seamless client-server communication. I thrive in team environments, meet deadlines, and deliver clean, maintainable code for the best user experience.
+                Hi there! I'm Muhammad Munir a Software Engineer and Full Stack Developer in my final year of Computer Science at IIUI. I build responsive web applications using modern tools like JavaScript, Node.js, MongoDB, and Tailwind. I enjoy solving problems, creating impactful solutions, and continuously learning in web development and data analysis.
                 
               </p>
             </div>
@@ -377,7 +377,7 @@ export default function AboutMe() {
                   {/* You can use FaUtensils here if you want a food icon */}
                   Dining
                 </div>
-                <div className="text-white text-sm">Spending a wonderful day at the restaurant with my teacher and friends—great food, meaningful conversations, and lots of laughs. Truly a refreshing break!</div>
+                <div className="text-white text-sm">Spending a wonderful day at the education center H-8, Islamabad where our teacher taught us—enjoying the food we ordered, meaningful conversations, and lots of laughs. Truly a refreshing break!</div>
               </div>
             </div>
             {/* Food Explorer Card */}
