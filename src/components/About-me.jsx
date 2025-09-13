@@ -1,6 +1,8 @@
 "use client";
-import { FaLeaf, FaGithub, FaHotel, FaLinkedin, FaEnvelope, FaDatabase, FaCloud, FaTools, FaProjectDiagram, FaQuoteRight, FaBook, FaBlog } from "react-icons/fa";
+import { FaLeaf, FaGithub, FaHotel, FaLinkedin ,FaEnvelope, FaDatabase, FaCloud, FaTools, FaProjectDiagram, FaQuoteRight, FaBook, FaBlog } from "react-icons/fa";
 import React from "react";
+import { GiGiftOfKnowledge } from "react-icons/gi";
+
 // import { useSession } from "next-auth/react";
 import { MdOutlineHistoryToggleOff } from "react-icons/md";
 import Link from "next/link";
@@ -72,7 +74,7 @@ export default function AboutMe() {
           <div className="flex-1 flex flex-col items-center justify-center">
             <div className="relative w-80 h-72 rounded-2xl overflow-hidden shadow">
               <img
-                src="/assets/aboutme.jpeg"
+                src="/assets/munir.jpeg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -91,40 +93,47 @@ export default function AboutMe() {
         {/* Skills Section */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Frontend Skills */}
-          <div className="bg-white rounded-2xl shadow p-6">
-            <div className="flex items-center mb-2 text-green-700 text-2xl">
-              <span className="mr-2">{"</>"}</span>
-              <span className="text-lg font-bold text-[#1a2e1a]">Frontend Skills</span>
-            </div>
-            <SkillBar label="React.js" percent={90} />
-            <SkillBar label="Next.js" percent={85} />
-            <SkillBar label="Tailwind CSS" percent={90} />
-            <SkillBar label="Bootstrap" percent={85} />
-            <SkillBar label="Responsive Design" percent={95} />
-          </div>
-          {/* Backend Skills */}
-          <div className="bg-white rounded-2xl shadow p-6">
-            <div className="flex items-center mb-2 text-green-700 text-2xl">
-              <span className="mr-2">&#123;DB&#125;</span>
-              <span className="text-lg font-bold text-[#1a2e1a]">Backend Skills</span>
-            </div>
-            <SkillBar label="Node.js" percent={90} />
-            <SkillBar label="Express.js" percent={85} />
-            <SkillBar label="MongoDB" percent={80} />
-            <SkillBar label="MySQL" percent={75} />
-            <SkillBar label="Deployments" percent={80} />
-          </div>
-          {/* Other Skills */}
-          <div className="bg-white rounded-2xl shadow p-6">
-            <div className="flex items-center mb-2 text-green-700 text-2xl">
-              <span className="mr-2">🎨</span>
-              <span className="text-lg font-bold text-[#1a2e1a]">Other Skills</span>
-            </div>
-            <SkillBar label="Teamwork" percent={90} />
-            <SkillBar label="Problem Solving" percent={90} />
-            <SkillBar label="API Integration" percent={85} />
-            <SkillBar label="UI/UX Basics" percent={75} />
-          </div>
+<div className="bg-white rounded-2xl shadow p-6">
+  <div className="flex items-center mb-2 text-green-700 text-2xl">
+    <span className="mr-2">{"</>"}</span>
+    <span className="text-lg font-bold text-[#1a2e1a]">Frontend Skills</span>
+  </div>
+  <ul className="list-disc list-inside text-[#2C662C]">
+    <li>React.js</li>
+    <li>Tailwind CSS</li>
+    <li>Bootstrap</li>
+    <li>shadcn</li>
+    <li>Responsive Design</li>
+  </ul>
+</div>
+
+{/* Backend Skills */}
+<div className="bg-white rounded-2xl shadow p-6">
+  <div className="flex items-center mb-2 text-green-700 text-2xl">
+    <span className="mr-2"><FaDatabase /></span>
+    <span className="text-lg font-bold text-[#1a2e1a]">Backend Skills</span>
+  </div>
+  <ul className="list-disc list-inside text-[#2C662C]">
+    <li>Node.js</li>
+    <li>Express.js</li>
+    <li>MongoDB</li>
+    <li>MySQL</li>
+    <li>Deployments</li>
+  </ul>
+</div>
+
+{/* Other Skills */}
+<div className="bg-white rounded-2xl shadow p-6">
+  <div className="flex items-center mb-2 text-green-700 text-2xl">
+    <GiGiftOfKnowledge className="mr-2" />
+    <span className="text-lg font-bold text-[#1a2e1a]">Other Skills</span>
+  </div>
+  <ul className="list-disc list-inside text-[#2C662C]">
+    <li>Teamwork</li>
+    <li>Problem Solving</li>
+    <li>API Integration</li>
+  </ul>
+</div>
         </div>
         {/* Projects & Q&A Section */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -167,15 +176,12 @@ export default function AboutMe() {
           {/* Rotating Questions Card */}
           <div className="bg-green-700 rounded-2xl shadow p-6 flex flex-col justify-between min-h-[220px] h-full text-white relative overflow-hidden">
             <div className="flex items-center mb-2 text-2xl">
-              <FaQuoteRight className="mr-2" />
               <span className="text-lg font-bold">Interview Q&A</span>
             </div>
             <div className="flex-1 flex items-center justify-center">
               <p className="text-lg italic text-white/90 transition-all duration-500">{questions[currentQ]}</p>
             </div>
-            <div className="absolute right-4 bottom-4 opacity-10 text-7xl">
-              <FaQuoteRight />
-            </div>
+
           </div>
         </div>
         {/* Other Projects Row */}
@@ -244,7 +250,6 @@ export default function AboutMe() {
       <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">MongoDB</span>
       <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">JWT Auth</span>
       <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">APIS With Postman</span>
-      <span className="bg-green-800/80 text-white px-3 py-1 rounded-full text-xs">Stripe Payment gateway</span>
     </div>
     {/* Decorative circle */}
     <span className="absolute right-8 bottom-0 w-40 h-40 rounded-full bg-green-900 opacity-20"></span>
@@ -309,16 +314,7 @@ export default function AboutMe() {
                 <div className="text-green-900 text-sm">NAVTTC (Islamabad), 2025</div>
               </div>
               {/* Certification 2 */}
-              <div>
-                <div className="flex items-center mb-1 text-green-700">
-                  <svg className="mr-1" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
-                    <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
-                  </svg>
-                  <span className="font-semibold">Advanced React & Redux</span>
-                </div>
-                <div className="text-green-900 text-sm">Frontend Masters, 2024</div>
-              </div>
+      
               {/* Certification 3 */}
               <div>
                 <div className="flex items-center mb-1 text-green-700">
@@ -343,6 +339,15 @@ export default function AboutMe() {
                 <div className="text-green-900 text-sm">frontend Master, 2025</div>
                  <Link href={"/certificates/responsive"}>View Certificate</Link>
               </div>
+                <div className="flex items-center mb-1 text-green-700">
+                  <svg className="mr-1" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
+                    <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
+                  </svg>
+                  <span className="font-semibold">Async javascript</span>
+                  <p>Youtube Codeevolution</p>
+                </div>
+          
             </div>
           </div>
         </div>
