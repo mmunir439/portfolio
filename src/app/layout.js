@@ -1,4 +1,5 @@
 import "./globals.css";
+import { IconName } from "react-icons/im";
 import { Roboto} from 'next/font/google';
 
 const roboto = Roboto({
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${roboto.variable}`}>
       <head>
         <title>My Portfolio</title>
-         <link rel="icon" type="image/x-icon" href="/electronics.png" />
+         <link rel="icon" type="image/x-icon" href={<IconName />} />
       </head>
       <body>
         {children}
