@@ -80,10 +80,10 @@ export default function AboutMe() {
               />
               {/* Social Icons Overlay */}
               <div className="absolute bottom-4 left-4 flex gap-4">
-                <Link href={process.env.NEXT_PUBLIC_GITHUB_URL} className="text-white hover:text-green-200 text-2xl" aria-label="GitHub">
+                <Link href={process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/mmunir439"} className="text-white hover:text-green-200 text-2xl" aria-label="GitHub">
                   <FaGithub />
                 </Link>
-                <Link href={process.env.NEXT_PUBLIC_LINKEDIN_URL} className="text-white hover:text-green-200 text-2xl" aria-label="LinkedIn">
+                <Link href={process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://www.linkedin.com/in/munirdev/"} className="text-white hover:text-green-200 text-2xl" aria-label="LinkedIn">
                   <FaLinkedin />
                 </Link>
               </div>
@@ -312,10 +312,10 @@ export default function AboutMe() {
                   <span className="font-semibold">Full Stack MERN</span>
                 </div>
                 <div className="text-green-900 text-sm">NAVTTC (Islamabad), 2025</div>
+                <Link href={"/certificates/navvtac"}>View Certificate</Link>
               </div>
+
               {/* Certification 2 */}
-      
-              {/* Certification 3 */}
               <div>
                 <div className="flex items-center mb-1 text-green-700">
                   <svg className="mr-1" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
@@ -325,8 +325,22 @@ export default function AboutMe() {
                   <span className="font-semibold">Complete Intro to web dev v3</span>
                 </div>
                 <div className="text-green-900 text-sm">frontend Master, 2025</div>
-                 <Link href={"/certificates/completewebdev"}>View Certificate</Link>
+                <Link href={"/certificates/completewebdev"}>View Certificate</Link>
               </div>
+
+              {/* Certification 3 */}
+              <div>
+                <div className="flex items-center mb-1 text-green-700">
+                  <svg className="mr-1" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
+                    <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
+                  </svg>
+                  <span className="font-semibold">CSS, Responsive Web design</span>
+                </div>
+                <div className="text-green-900 text-sm">frontend Master, 2025</div>
+                <Link href={"/certificates/responsive"}>View Certificate</Link>
+              </div>
+
               {/* Certification 4 */}
               <div>
                 <div className="flex items-center mb-1 text-green-700">
@@ -334,20 +348,10 @@ export default function AboutMe() {
                     <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
                     <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
                   </svg>
-                  <span className="font-semibold">CSS,Responsive Web design</span>
-                </div>
-                <div className="text-green-900 text-sm">frontend Master, 2025</div>
-                 <Link href={"/certificates/responsive"}>View Certificate</Link>
-              </div>
-                <div className="flex items-center mb-1 text-green-700">
-                  <svg className="mr-1" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="10" cy="10" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
-                    <path d="M6 10l2 2l4-4" stroke="currentColor" strokeWidth="2" fill="none" />
-                  </svg>
                   <span className="font-semibold">Async javascript</span>
-                  <p>Youtube Codeevolution</p>
                 </div>
-          
+                <div className="text-green-900 text-sm">Youtube Codeevolution</div>
+              </div>
             </div>
           </div>
         </div>
