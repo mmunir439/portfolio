@@ -42,7 +42,7 @@ export default function Navbar() {
         className="font-bold text-2xl text-gray-800 ml-[60px]"
         style={{ fontFamily: "Quicksand, sans-serif" }}
       >
-        Muhmmmad M .
+        Muhmmad M .
       </Link>
 
       {/* Desktop Menu */}
