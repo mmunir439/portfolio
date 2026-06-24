@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Muhammad Munir | Full Stack Developer",
   description:
-    "Portfolio of Muhammad Munir  Full Stack Developer specializing in React, Next.js, Node.js, and MongoDB.",
+    "Certified Full Stack Developer portfolio  React, Next.js, Node.js, MongoDB, and production deployments.",
 };
 
 export default function RootLayout({ children }) {

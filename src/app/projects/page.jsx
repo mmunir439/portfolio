@@ -9,7 +9,7 @@ const projects = [
     subtitle: "Smart Scholarship Guidance System",
     description:
       "AI-powered platform helping Pakistani students discover, qualify, and apply to fully-funded scholarships in the USA and Europe with profile-based matching and application guidance.",
-    image: null,
+    image: "/assets/scholarhsip.jpg",
     tags: ["React", "Next.js", "Tailwind CSS", "AI", "Vercel"],
     href: "https://smart-scholarship-finder-frontend.vercel.app/",
   },

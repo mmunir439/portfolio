@@ -154,10 +154,6 @@ export default function InterviewQA() {
           );
         })}
       </div>
-
-      <p className="text-xs text-body/70 mt-4 pt-3 border-t border-[#e5e7eb]">
-        {topics.length} categories · {topics.reduce((n, t) => n + t.items.length, 0)} questions covered
-      </p>
     </div>
   );
 }

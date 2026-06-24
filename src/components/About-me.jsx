@@ -77,9 +77,9 @@ export default function AboutMe() {
                 M. Munir
               </h1>
               <p className="text-body text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-                Software Engineer in my final year at IIUI. I build responsive web applications
-                with JavaScript, Node.js, MongoDB, and Tailwind  solving problems and shipping
-                impactful full-stack solutions.
+                Certified Full Stack Developer specializing in the MERN stack. I build responsive,
+                production-ready web applications with React, Next.js, Node.js, MongoDB, and Tailwind
+                 focused on clean code, real-world problem solving, and reliable deployments.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <Link href="/projects" className="btn-primary">
@@ -93,7 +93,7 @@ export default function AboutMe() {
             <div className="flex-shrink-0">
               <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-4 border-white shadow-xl">
                 <img
-                  src="/assets/munir.jpeg"
+                  src="/assets/munir2.png"
                   alt="M. Munir"
                   className="w-full h-full object-cover"
                 />
@@ -129,9 +129,9 @@ export default function AboutMe() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="section-title mb-4">Who Am I?</h2>
             <p className="section-subtitle mx-auto">
-              Hi there! I&apos;m M.Munir  a Full Stack Developer and nature enthusiast.
-              I enjoy solving problems, creating impactful solutions, and continuously learning
-              in web development and data analysis. Based in Islamabad, Pakistan.
+              Hi there! I&apos;m M.Munir  a certified Full Stack Developer with hands-on experience
+              across frontend, backend, and deployment. I enjoy turning ideas into scalable applications
+              and continuously sharpening my skills in modern web development. Based in Islamabad, Pakistan.
             </p>
           </div>
         </div>
