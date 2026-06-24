@@ -1,28 +1,206 @@
 @import "tailwindcss";
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #f3f4ff;
+  --surface: #ffffff;
+  --dark-text: #1a1a3a;
+  --heading-violet: #1e0a52;
+  --body-text: #5f5f86;
+  --nav-text: #666666;
+  --primary-green: #599553;
+  --primary-hover: #487a42;
+  --primary-dark: #34652c;
+  --primary-light: #6fab65;
+  --border-color: #e5e7eb;
+  --max-width: 1280px;
+  --font-main: "General Sans", system-ui, sans-serif;
+  --gradient-primary: linear-gradient(177deg, #34652c -13.59%, #6fab65 109.86%);
+  --gradient-hero: linear-gradient(135deg, #1e0a52 0%, #34652c 100%);
 }
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg-color);
+  --color-surface: var(--surface);
+  --color-dark: var(--dark-text);
+  --color-heading: var(--heading-violet);
+  --color-body: var(--body-text);
+  --color-primary: var(--primary-green);
+  --color-primary-hover: var(--primary-hover);
+  --font-sans: var(--font-main);
 }
-:root {
-  --font-roboto: 'Roboto', sans-serif;
-  /* --font-gothic: 'Gothic A1', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-roboto);
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--body-text);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Layout */
+.container-main {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
+
+/* Typography */
+.text-heading {
+  color: var(--heading-violet);
+}
+
+.text-dark {
+  color: var(--dark-text);
+}
+
+.text-body {
+  color: var(--body-text);
+}
+
+.text-primary {
+  color: var(--primary-green);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 14px;
+  background: var(--gradient-primary);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 14px;
+  background: transparent;
+  color: var(--primary-green);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 1.5px solid var(--primary-green);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: var(--primary-green);
+  color: #ffffff;
+}
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(30, 10, 82, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(30, 10, 82, 0.08);
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #e8f5e6;
+  color: var(--primary-hover);
+}
+
+/* Section */
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--heading-violet);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 1.0625rem;
+  color: var(--body-text);
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* CTA banner */
+.cta-banner {
+  background: var(--gradient-primary);
+  border-radius: 20px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Nav link */
+.nav-link {
+  color: var(--nav-text);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-green);
+}
+
+.nav-link-active {
+  color: var(--primary-green);
+  background: #e8f5e6;
+}
+
+/* Icon box (feature cards) */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e8f5e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
 @keyframes rise-fade {
   0% {
     opacity: 0.3;
@@ -37,6 +215,7 @@ body {
     transform: translateY(-60px) scale(1.2);
   }
 }
+
 .animate-rise-fade {
   animation: rise-fade 2.5s infinite;
 }
