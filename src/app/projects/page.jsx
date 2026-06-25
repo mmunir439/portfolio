@@ -31,15 +31,6 @@ const projects = [
     tags: ["Next.js", "MongoDB", "Tailwind CSS"],
     href: "https://blogs-app-sigma-five.vercel.app/",
   },
-  {
-    title: "CRIMINAL RECORD",
-    subtitle: "Criminal Record Application",
-    description:
-      "Application for managing criminal records with user authentication and a robust backend.",
-    image: "/assets/criminal.avif",
-    tags: ["Next.js", "MongoDB", "Tailwind CSS"],
-    href: "https://crime-checker-ai-2025-frontend-zeta.vercel.app/",
-  },
 ];
 
 export default function Projects() {
