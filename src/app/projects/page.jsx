@@ -14,22 +14,13 @@ const projects = [
     href: "https://smart-scholarship-finder-frontend.vercel.app/",
   },
   {
-    title: "RENTISTAAN",
-    subtitle: "Rentistaan E-Commerce Store",
+    title: "Tanvir Electronics",
+    subtitle: "All types of electronics products and money transfer",
     description:
-      "A full-featured, modern e-commerce application for premium rentals, built with React, Next.js, and Node.js.",
-    image: "/assets/rent_logo.jpg",
-    tags: ["React", "Next.js", "Node.js", "Tailwind CSS"],
-    href: "https://rentistaan-front.vercel.app/",
-  },
-  {
-    title: "MUNIRBOOKSTORE",
-    subtitle: "Book E-Commerce Store",
-    description:
-      "Online booking store where people can browse and book their favorite items. Built with React and Tailwind CSS.",
-    image: "/assets/books.jpg",
-    tags: ["React", "Tailwind CSS"],
-    href: "https://munirbookstore.example.com/",
+      "A full-featured, modern e-commerce application for records of customers, products, and money transfer, built with React, Next.js, and Node.js.",
+    image: "/assets/tanvir.jpg",
+    tags: ["React", "Next.js", "Node.js", "Tailwind CSS", "MongoDB", ],
+    href: "https://todoapp-frontend-pi.vercel.app/",
   },
   {
     title: "BLOGSAPP",
