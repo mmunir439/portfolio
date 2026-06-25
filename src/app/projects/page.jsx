@@ -18,7 +18,7 @@ const projects = [
     subtitle: "All types of electronics products and money transfer",
     description:
       "A full-featured, modern e-commerce application for records of customers, products, and money transfer, built with React, Next.js, and Node.js.",
-    image: "/assets/tanvir.jpg",
+    image: "/assets/electric.jpg",
     tags: ["React", "Next.js", "Node.js", "Tailwind CSS", "MongoDB", ],
     href: "https://todoapp-frontend-pi.vercel.app/",
   },
