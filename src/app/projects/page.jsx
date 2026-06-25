@@ -32,15 +32,6 @@ const projects = [
     href: "https://blogs-app-sigma-five.vercel.app/",
   },
   {
-    title: "TODOAPP",
-    subtitle: "Todo Application",
-    description:
-      "A simple and intuitive todo application for managing tasks, built with Next.js and MongoDB.",
-    image: "/assets/todoapp.avif",
-    tags: ["Next.js", "MongoDB", "Tailwind CSS"],
-    href: "https://todoapp-frontend-beryl.vercel.app/",
-  },
-  {
     title: "CRIMINAL RECORD",
     subtitle: "Criminal Record Application",
     description:
